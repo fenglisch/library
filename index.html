@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Personal Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Your Personal Library</h1>
+    </div>
+    <div class="main">
+      <div class="grid"></div>
+      <button class="add">Add new</button>
+
+      <div class="modal hidden">
+        <form>
+          <span class="close">&times;</span>
+          <label for="form-title">Title</label>
+          <input type="text" id="form-title" name="form-title" required />
+          <p class="warn-box-title hidden">
+            Please enter a title before submitting.
+          </p>
+          <label for="form-author">Author</label>
+          <input type="text" id="form-author" name="form-author" required />
+          <p class="warn-box-author hidden">
+            Please enter an author before submitting.
+          </p>
+          <label for="form-pages">Pages</label>
+          <input type="number" id="form-pages" name="form-pages" />
+          <input type="checkbox" id="form-status" name="form-status" />
+          <label for="form-status">I already read the book</label>
+          <button type="submit" class="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
